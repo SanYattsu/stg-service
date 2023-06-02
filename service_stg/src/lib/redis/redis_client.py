@@ -17,5 +17,5 @@ class RedisClient:
         self._client.set(k, json.dumps(v))
 
     def get(self, k) -> Dict:
-        obj: str = self._client.get(k)  # type: ignore
+        obj: str = self._client.get(k)
         return json.loads(obj)

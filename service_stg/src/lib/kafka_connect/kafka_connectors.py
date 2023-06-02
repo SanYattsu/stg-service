@@ -5,7 +5,7 @@ from confluent_kafka import Consumer, Producer
 
 
 def error_callback(err):
-    print('Something went wrong: {}'.format(err))
+    print('Error message: {}'.format(err))
 
 
 class KafkaProducer:
